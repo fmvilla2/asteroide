@@ -1,4 +1,4 @@
-const axios = require('axios');
+//const axios = require('axios');
 
 function getAsteroide(fecha_de_nacimiento){
 const url ='https://api.nasa.gov/neo/rest/v1/feed?start_date='+fecha_de_nacimiento+'&end_date='
@@ -27,4 +27,6 @@ asteroide.then((response)=>{
 }
 )}
 
-getAsteroide("1992-01-16")
+//getAsteroide("1992-01-16")
+
+module.exports=getAsteroide;
